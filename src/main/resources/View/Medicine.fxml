@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<AnchorPane fx:id="MainAnchorpane" prefHeight="1080.0" prefWidth="1572.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.MedicineController">
+    <children>
+        <Label layoutX="60.0" layoutY="45.0" text="- Medicine -">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="143.0" text="Medicine ID :">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="250.0" text="Description :">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="559.0" layoutY="143.0" text="Quantity :">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="txtMedId" onKeyReleased="#onMedId" layoutX="60.0" layoutY="183.0" prefHeight="44.0" prefWidth="393.0" />
+        <JFXTextField fx:id="txtMedDesc" onKeyReleased="#onDesc" layoutX="60.0" layoutY="288.0" prefHeight="149.0" prefWidth="393.0" />
+        <JFXTextField fx:id="txtMedQty" onKeyReleased="#onQty" layoutX="559.0" layoutY="183.0" prefHeight="44.0" prefWidth="393.0" />
+        <JFXButton fx:id="btnClear" layoutX="559.0" layoutY="341.0" onAction="#btnClearOnAction" prefHeight="44.0" prefWidth="148.0" style="-fx-background-color: yellow;" text="Clear">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font></JFXButton>
+        <JFXButton fx:id="btnDelete" layoutX="756.0" layoutY="341.0" onAction="#btnDeleteOnAction" prefHeight="44.0" prefWidth="148.0" style="-fx-background-color: red;" text="Delete">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font></JFXButton>
+        <JFXButton fx:id="btnSave" layoutX="1136.0" layoutY="341.0" onAction="#btnSaveOnAction" prefHeight="44.0" prefWidth="148.0" style="-fx-background-color: lightblue;" text="Save">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font></JFXButton>
+        <JFXButton fx:id="btnUpdate" layoutX="946.0" layoutY="341.0" onAction="#btnUpdateOnAction" prefHeight="44.0" prefWidth="148.0" style="-fx-background-color: lightgreen;" text="Update">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font></JFXButton>
+        <TableView fx:id="tblMedicine" layoutX="60.0" layoutY="483.0" prefHeight="404.0" prefWidth="938.0">
+            <columns>
+                <TableColumn fx:id="colMedid" prefWidth="183.0" text="Medicine ID " />
+                <TableColumn fx:id="colDescription" prefWidth="323.0" text="Description " />
+                <TableColumn fx:id="colQtyOnHand" prefWidth="189.0" text="Quantity " />
+                <TableColumn fx:id="colUnitPrice" prefWidth="242.0" text="Price " />
+            </columns>
+        </TableView>
+        <JFXButton fx:id="btnBack" layoutX="850.0" layoutY="935.0" onAction="#onMedicineBackClick" prefHeight="44.0" prefWidth="148.0" style="-fx-background-color: #ADBC9F; -fx-background-radius: 10;" text="Back">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </JFXButton>
+        <JFXTextField fx:id="txtMedPrice" onKeyReleased="#onPrice" layoutX="1050.0" layoutY="183.0" prefHeight="44.0" prefWidth="393.0" />
+        <Label layoutX="1050.0" layoutY="143.0" text="Price :">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="433.0" fitWidth="507.0" layoutX="1031.0" layoutY="516.0" pickOnBounds="true" preserveRatio="true">
+
+        </ImageView>
+        <ImageView fitHeight="35.0" fitWidth="29.0" layoutX="1146.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/Save.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="35.0" fitWidth="29.0" layoutX="952.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/Update.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="35.0" fitWidth="29.0" layoutX="764.0" layoutY="348.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/Delete.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="35.0" fitWidth="29.0" layoutX="568.0" layoutY="349.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/Clear.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<AnchorPane fx:id="MainAnchorpane" prefHeight="1080.0" prefWidth="1572.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.AppointmentController">
+    <children>
+        <Label layoutX="61.0" layoutY="44.0" text="- Appointment -">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="140.0" text="Appointment ID :">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="247.0" text="Pet Owner ID :">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="469.0" layoutY="139.0" text="Date :">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <JFXTextField fx:id="txtTime" onKeyReleased="#onTime" layoutX="883.0" layoutY="181.0" prefHeight="44.0" prefWidth="273.0" />
+
+        <JFXTextField fx:id="txtAppointment" onKeyReleased="#onAppointment" layoutX="61.0" layoutY="180.0" prefHeight="44.0" prefWidth="273.0" />
+        <JFXButton fx:id="btnDelete" layoutX="885.0" layoutY="288.0" onAction="#btnDeleteOnAction" prefHeight="44.0" prefWidth="139.0" style="-fx-background-color: red;" text="Delete">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font></JFXButton>
+        <JFXButton fx:id="btnSave" layoutX="1265.0" layoutY="288.0" onAction="#btnSaveOnAction" prefHeight="44.0" prefWidth="139.0" style="-fx-background-color: lightblue;" text="Save">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font></JFXButton>
+        <JFXButton fx:id="btnUpdate" layoutX="1071.0" layoutY="289.0" onAction="#btnUpdateOnAction" prefHeight="44.0" prefWidth="139.0" style="-fx-background-color: lightgreen;" text="Update">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font></JFXButton>
+        <TableView fx:id="tblAppointment" layoutX="60.0" layoutY="398.0" prefHeight="481.0" prefWidth="973.0">
+            <columns>
+                <TableColumn fx:id="colAppointmentID" prefWidth="183.0" text="Appointment ID " />
+                <TableColumn fx:id="colDate" prefWidth="209.0" text="Date " />
+                <TableColumn fx:id="colTime" prefWidth="207.0" text="Time " />
+                <TableColumn fx:id="colPetOwnerID" prefWidth="186.0" text="Pet Owner ID " />
+                <TableColumn fx:id="colVeternarianID" prefWidth="187.0" text="Veternarian ID " />
+            </columns>
+        </TableView>
+        <JFXButton layoutX="885.0" layoutY="936.0" onAction="#onAppointmentBackClick" prefHeight="44.0" prefWidth="148.0" style="-fx-background-color: #ADBC9F; -fx-background-radius: 10;" text="Back">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </JFXButton>
+        <Label layoutX="883.0" layoutY="140.0" text="Time :">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="470.0" layoutY="247.0" text="Veternarian ID :">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="310.0" fitWidth="446.0" layoutX="1082.0" layoutY="489.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/360_F_258099440_hZxmuqf431thOfiJjdi5VMsMZBz27eZe.jpg" />
+            </image>
+        </ImageView>
+        <ComboBox fx:id="cmbPetOwner" layoutX="61.0" layoutY="287.0" onAction="#cmbPetOwnerOnAction" prefHeight="44.0" prefWidth="273.0" />
+        <ComboBox fx:id="cmbVeternarian" layoutX="470.0" layoutY="288.0" onAction="#cmbVeternarianOnAction" prefHeight="44.0" prefWidth="273.0" />
+        <DatePicker fx:id="DatePicker" layoutX="469.0" layoutY="181.0" onAction="#DatePickerOnAction" prefHeight="44.0" prefWidth="273.0" />
+        <ImageView fitHeight="35.0" fitWidth="29.0" layoutX="1276.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/Save.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="35.0" fitWidth="29.0" layoutX="1079.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/Update.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="35.0" fitWidth="29.0" layoutX="893.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../image/Delete.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

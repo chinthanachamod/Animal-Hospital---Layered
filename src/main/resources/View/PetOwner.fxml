@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<AnchorPane fx:id="MainAnchorpane" prefHeight="1051.0" prefWidth="1572.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.PetOwnerController">
+   <children>
+      <Label layoutX="82.0" layoutY="48.0" text="- Pet Owner -">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="160.0" text="Pet Owner ID :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="1097.0" layoutY="160.0" text="Contact :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="588.0" layoutY="160.0" text="Name :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtPetOwnerID" onKeyReleased="#onPetOwner" layoutX="82.0" layoutY="198.0" prefHeight="44.0" prefWidth="411.0" />
+      <JFXTextField fx:id="txtContact" onKeyReleased="#onContact" layoutX="1097.0" layoutY="198.0" prefHeight="44.0" prefWidth="411.0" />
+      <JFXTextField fx:id="txtName" onKeyReleased="#onName" layoutX="588.0" layoutY="198.0" prefHeight="44.0" prefWidth="411.0" />
+
+      <TableView fx:id="tblPetOwner" layoutX="82.0" layoutY="431.0" prefHeight="407.0" prefWidth="799.0">
+         <columns>
+            <TableColumn fx:id="colID" prefWidth="183.0" text="ID" />
+            <TableColumn fx:id="colName" prefWidth="355.0" text="Name" />
+            <TableColumn fx:id="colContact" prefWidth="261.0" text="Contact" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="407.0" fitWidth="612.0" layoutX="920.0" layoutY="431.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/PetOwner.jpg" />
+         </image>
+      </ImageView>
+
+      <Button fx:id="btnSave" layoutX="772.0" layoutY="325.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="44.0" prefWidth="148.0" style="-fx-background-color: lightblue;" text="Save">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="btnBack" layoutX="735.0" layoutY="901.0" mnemonicParsing="false" onAction="#btnBAckOnAction" prefHeight="44.0" prefWidth="148.0" style="-fx-background-color: #ADBC9F; -fx-background-radius: 10;" text="Back">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="btnUpdate" layoutX="543.0" layoutY="325.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="44.0" prefWidth="148.0" style="-fx-background-color: lightgreen;" text="Update">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="btnDelete" layoutX="315.0" layoutY="325.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="44.0" prefWidth="148.0" style="-fx-background-color: red;" text="Delete ">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="btnClear" layoutX="82.0" layoutY="326.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="44.0" prefWidth="148.0" style="-fx-background-color: yellow;" text="Clear">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <ImageView fitHeight="35.0" fitWidth="29.0" layoutX="89.0" layoutY="334.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Clear.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="29.0" layoutX="780.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Save.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="29.0" layoutX="325.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Delete.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="29.0" layoutX="551.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Update.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

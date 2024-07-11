@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.DashboardFormController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="-7.0" prefHeight="1087.0" prefWidth="349.0" style="-fx-background-color: #052b2b;">
+         <children>
+            <Label layoutX="78.0" layoutY="33.0" text="- Animal Empire -" textFill="#c6bcbc">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="62.0" layoutY="298.0" onAction="#onHomeActionClick" prefHeight="49.0" prefWidth="227.0" ripplerFill="#00e1ff" style="-fx-background-color: #135D66; -fx-background-radius: 7;" text="Home" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="63.0" layoutY="383.0" onAction="#onPetOwnerActionClick" prefHeight="49.0" prefWidth="227.0" ripplerFill="#0ebfda" style="-fx-background-color: #135D66; -fx-background-radius: 7;" text="Pet Owner" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="63.0" layoutY="552.0" onAction="#onAppointmentActionClick" prefHeight="49.0" prefWidth="227.0" ripplerFill="#00e1ff" style="-fx-background-color: #135D66; -fx-background-radius: 7;" text="Appointment" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="62.0" layoutY="637.0" onAction="#onPrescriptionActionClick" prefHeight="49.0" prefWidth="227.0" ripplerFill="#00e1ff" style="-fx-background-color: #135D66; -fx-background-radius: 7;" text="Prescription" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="63.0" layoutY="718.0" onAction="#onMedicineActionClick" prefHeight="49.0" prefWidth="227.0" ripplerFill="#00e1ff" style="-fx-background-color: #135D66; -fx-background-radius: 7;" text="Medicine" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="62.0" layoutY="802.0" onAction="#onSupplierActionClick" prefHeight="49.0" prefWidth="227.0" ripplerFill="#00e1ff" style="-fx-background-color: #135D66; -fx-background-radius: 7;" text="Supplier" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="63.0" layoutY="469.0" onAction="#onPetActionClick" prefHeight="49.0" prefWidth="227.0" ripplerFill="#0ebfda" style="-fx-background-color: #135D66; -fx-background-radius: 7;" text="Pet" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="199.0" fitWidth="175.0" layoutX="87.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8-user-100.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btnMedDetailes" buttonType="RAISED" layoutX="62.0" layoutY="885.0" onAction="#btnMedDetailesOnActionClick" prefHeight="49.0" prefWidth="227.0" ripplerFill="#00e1ff" style="-fx-background-color: #135D66; -fx-background-radius: 7;" text="Medicine Detailes" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="36.0" fitWidth="44.0" layoutX="68.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Home.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="44.0" layoutX="68.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/PetOwner.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="44.0" layoutX="68.0" layoutY="476.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Pet.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="44.0" layoutX="68.0" layoutY="559.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Appointment.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="44.0" layoutX="68.0" layoutY="725.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Medicine.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="44.0" layoutX="68.0" layoutY="644.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Prescription.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="44.0" layoutX="68.0" layoutY="809.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Supplier.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="44.0" layoutX="68.0" layoutY="892.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Medicine%20Details.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="1051.0" fitWidth="1572.0" layoutX="348.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/ezgif.com-webp-to-jpg-converter.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="1281.0" layoutY="301.0" prefHeight="214.0" prefWidth="571.0" text="&quot;The greatest wealth a country can have is its health, &#10;and the greatest health any animal can have is its &#10;freedom...&quot;&#10;&#10;- Dr. Bernard Rollin -" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="359.0" layoutY="73.0" prefHeight="1080.0" prefWidth="1920.0" />
+      <AnchorPane fx:id="ControlArea" layoutX="348.0" prefHeight="1080.0" prefWidth="1572.0" style="-fx-background-color: #1679AB;">
+         <children>
+            <ImageView fitHeight="1080.0" fitWidth="1572.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/wp3123607-ezgif.com-webp-to-png-converter.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

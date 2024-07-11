@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.SignUpController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1000.0">
+         <image>
+            <Image url="@../image/shutterstock_670571038 (1).jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="534.0" layoutY="27.0" prefHeight="666.0" prefWidth="446.0" style="-fx-background-color: rgba(40, 116, 166, 0.5); -fx-background-radius: 20px; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0.3, 0, 0);">
+         <children>
+            <Button layoutX="43.0" layoutY="14.0" mnemonicParsing="false" onAction="#SUSignInBtn" prefHeight="34.0" prefWidth="137.0" style="-fx-background-color: transparent;" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button layoutX="236.0" layoutY="14.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="137.0" style="-fx-background-color: transparent;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Button>
+            <AnchorPane layoutX="255.0" layoutY="53.0" prefHeight="3.0" prefWidth="100.0" style="-fx-background-color: white; -fx-background-radius: 10px;" />
+            <TextField layoutX="34.0" layoutY="363.0" prefHeight="40.0" prefWidth="370.0" style="-fx-background-color: transparent; -fx-border-color: #2874A6; -fx-border-radius: 10;" />
+            <Text fill="WHITE" layoutX="34.0" layoutY="346.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Last Name" wrappingWidth="92.2216796875">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="36.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="92.2216796875">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <PasswordField layoutX="34.0" layoutY="441.0" prefHeight="40.0" prefWidth="370.0" style="-fx-background-color: transparent; -fx-border-color: #2874A6; -fx-border-radius: 10;" />
+            <Text fill="WHITE" layoutX="15.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to" wrappingWidth="294.0">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="62.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please create your account" wrappingWidth="267.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="62.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Animal Empire Hospital !" wrappingWidth="370.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Text>
+            <Button layoutX="329.0" layoutY="445.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent; -fx-border-radius: 5;" textFill="#2874a6">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="364.0" layoutY="448.0">
+               <image>
+                  <Image url="@../image/icons8-eye-48.png" />
+               </image>
+            </ImageView>
+            <TextField layoutX="36.0" layoutY="282.0" prefHeight="40.0" prefWidth="370.0" style="-fx-background-color: transparent; -fx-border-color: #2874A6; -fx-border-radius: 10;" />
+            <Text fill="WHITE" layoutX="36.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name" wrappingWidth="92.2216796875">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="36.0" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirm Password" wrappingWidth="166.2216796875">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <PasswordField layoutX="34.0" layoutY="521.0" prefHeight="40.0" prefWidth="370.0" style="-fx-background-color: transparent; -fx-border-color: #2874A6; -fx-border-radius: 10;" />
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="364.0" layoutY="528.0">
+               <image>
+                  <Image url="@../image/icons8-eye-48.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="55.0" layoutY="593.0" prefHeight="46.0" prefWidth="336.0" style="-fx-background-color: white; -fx-border-radius: 6;" text="Sign Up" textFill="#2874a6">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
